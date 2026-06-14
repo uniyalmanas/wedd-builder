@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>WeddingCanvas — Build Your Cinematic Wedding Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/builder.css"/>
+</head>
+<body>
+
+<!-- LANDING PAGE -->
+<div id="landingPage">
+  <nav class="land-nav">
+    <div class="land-logo">
+      <div class="logo-gem">✦</div>
+      <span>WeddingCanvas</span>
+    </div>
+    <div class="land-nav-links">
+      <a href="#features">Features</a>
+      <a href="#themes">Themes</a>
+      <button class="land-cta-btn" onclick="startBuilder()">Create Your Portal</button>
+    </div>
+  </nav>
+
+  <section class="land-hero">
+    <div class="land-hero-bg"></div>
+    <div class="mandala-wrap">
+      <svg class="land-mandala" viewBox="0 0 500 500" fill="none">
+        <g stroke="#C9A84C" stroke-width="0.6" opacity="0.5">
+          <circle cx="250" cy="250" r="240"/><circle cx="250" cy="250" r="190"/><circle cx="250" cy="250" r="140"/><circle cx="250" cy="250" r="90"/><circle cx="250" cy="250" r="40"/>
+          <line x1="250" y1="10" x2="250" y2="490"/><line x1="10" y1="250" x2="490" y2="250"/>
+          <line x1="80" y1="80" x2="420" y2="420"/><line x1="420" y1="80" x2="80" y2="420"/>
+          <line x1="165" y1="10" x2="335" y2="490"/><line x1="10" y1="165" x2="490" y2="335"/>
+          <line x1="10" y1="335" x2="490" y2="165"/><line x1="335" y1="10" x2="165" y2="490"/>
+          <ellipse cx="250" cy="110" rx="18" ry="30" transform="rotate(0 250 250)"/>
+          <ellipse cx="250" cy="110" rx="18" ry="30" transform="rotate(45 250 250)"/>
+          <ellipse cx="250" cy="110" rx="18" ry="30" transform="rotate(90 250 250)"/>
+          <ellipse cx="250" cy="110" rx="18" ry="30" transform="rotate(135 250 250)"/>
+          <ellipse cx="250" cy="110" rx="18" ry="30" transform="rotate(180 250 250)"/>
+          <ellipse cx="250" cy="110" rx="18" ry="30" transform="rotate(225 250 250)"/>
+          <ellipse cx="250" cy="110" rx="18" ry="30" transform="rotate(270 250 250)"/>
+          <ellipse cx="250" cy="110" rx="18" ry="30" transform="rotate(315 250 250)"/>
+          <ellipse cx="250" cy="155" rx="11" ry="20" transform="rotate(22 250 250)"/>
+          <ellipse cx="250" cy="155" rx="11" ry="20" transform="rotate(67 250 250)"/>
+          <ellipse cx="250" cy="155" rx="11" ry="20" transform="rotate(112 250 250)"/>
+          <ellipse cx="250" cy="155" rx="11" ry="20" transform="rotate(157 250 250)"/>
+          <ellipse cx="250" cy="155" rx="11" ry="20" transform="rotate(202 250 250)"/>
+          <ellipse cx="250" cy="155" rx="11" ry="20" transform="rotate(247 250 250)"/>
+          <ellipse cx="250" cy="155" rx="11" ry="20" transform="rotate(292 250 250)"/>
+          <ellipse cx="250" cy="155" rx="11" ry="20" transform="rotate(337 250 250)"/>
+          <circle cx="250" cy="250" r="8" fill="#C9A84C" opacity="0.4"/>
+        </g>
+      </svg>
+    </div>
+    <div class="land-hero-content">
+      <div class="land-hero-badge">✦ For Every Indian Wedding</div>
+      <h1 class="land-hero-title">Your love story<br/><em>deserves a stage</em></h1>
+      <p class="land-hero-sub">Build a cinematic wedding portal in minutes. Choose your theme, add your story, and share a stunning website that tells every chapter — from Haldi to Vidaai.</p>
+      <div class="land-hero-actions">
+        <button class="land-primary-btn" onclick="startBuilder()">Start Building Free</button>
+        <button class="land-ghost-btn" onclick="previewDemo()">See a Demo Portal →</button>
+      </div>
+      <div class="land-stats">
+        <div class="land-stat"><span class="stat-num">6</span><span class="stat-lbl">Indian Themes</span></div>
+        <div class="stat-sep">·</div>
+        <div class="land-stat"><span class="stat-num">6</span><span class="stat-lbl">Ceremonies</span></div>
+        <div class="stat-sep">·</div>
+        <div class="land-stat"><span class="stat-num">∞</span><span class="stat-lbl">Memories</span></div>
+      </div>
+    </div>
+    <div class="petal p1"></div><div class="petal p2"></div><div class="petal p3"></div>
+    <div class="petal p4"></div><div class="petal p5"></div><div class="petal p6"></div>
+  </section>
+
+  <section class="land-features" id="features">
+    <div class="land-section-inner">
+      <p class="land-eyebrow">Why WeddingCanvas</p>
+      <h2 class="land-section-title">Everything your wedding<br/><em>story needs</em></h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feat-icon">✦</div>
+          <h3>6 Cinematic Themes</h3>
+          <p>Royal Rajasthani, Mughal Garden, Marigold Bloom, Kerala Heritage, Bengali Blossom, and Modern Minimal — each a complete visual universe.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">◈</div>
+          <h3>Your Complete Story</h3>
+          <p>From how you met to the proposal — tell every chapter with our story timeline. Add photos, dates, and your words in minutes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">❋</div>
+          <h3>Every Ceremony</h3>
+          <p>Haldi, Mehendi, Sangeet, Vivah, Vidaai, Reception — toggle each on, add dates, descriptions and dedicated photo galleries.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">◉</div>
+          <h3>Cinematic Film Section</h3>
+          <p>Embed your wedding short film from YouTube or Vimeo. Display it in our signature film-reel frame that makes every video feel like a premiere.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">✿</div>
+          <h3>Guest Blessings</h3>
+          <p>Friends and family can leave blessings directly on your portal. Every message is beautifully displayed in the blessings gallery.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">⬡</div>
+          <h3>Share Instantly</h3>
+          <p>One click generates a shareable link. Send it in your wedding invitation, share on WhatsApp, or print as a QR code for your guests.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="land-themes" id="themes">
+    <div class="land-section-inner">
+      <p class="land-eyebrow">Choose Your World</p>
+      <h2 class="land-section-title">Six <em>cinematic</em> themes</h2>
+      <div class="themes-showcase">
+        <div class="theme-showcase-card" style="background:#1a060a;" onclick="startBuilderWithTheme('rajasthani')">
+          <div class="tsc-pattern rajasthani-pattern"></div>
+          <div class="tsc-content">
+            <div class="tsc-name" style="color:#C9A84C;">Royal Rajasthani</div>
+            <div class="tsc-sub">Burgundy &amp; Gold</div>
+          </div>
+          <div class="tsc-hover">Choose This →</div>
+        </div>
+        <div class="theme-showcase-card" style="background:#091510;" onclick="startBuilderWithTheme('mughal')">
+          <div class="tsc-pattern mughal-pattern"></div>
+          <div class="tsc-content">
+            <div class="tsc-name" style="color:#7EC8A0;">Mughal Garden</div>
+            <div class="tsc-sub">Emerald &amp; Ivory</div>
+          </div>
+          <div class="tsc-hover">Choose This →</div>
+        </div>
+        <div class="theme-showcase-card" style="background:#120e00;" onclick="startBuilderWithTheme('marigold')">
+          <div class="tsc-pattern marigold-pattern"></div>
+          <div class="tsc-content">
+            <div class="tsc-name" style="color:#F4A61A;">Marigold Bloom</div>
+            <div class="tsc-sub">Saffron &amp; Midnight</div>
+          </div>
+          <div class="tsc-hover">Choose This →</div>
+        </div>
+        <div class="theme-showcase-card" style="background:#f5f0ea;" onclick="startBuilderWithTheme('modern')">
+          <div class="tsc-pattern modern-pattern"></div>
+          <div class="tsc-content">
+            <div class="tsc-name" style="color:#1a1a1a;">Modern Minimal</div>
+            <div class="tsc-sub" style="color:#888;">Cream &amp; Charcoal</div>
+          </div>
+          <div class="tsc-hover" style="color:#1a1a1a;">Choose This →</div>
+        </div>
+        <div class="theme-showcase-card" style="background:#080f1a;" onclick="startBuilderWithTheme('kerala')">
+          <div class="tsc-pattern kerala-pattern"></div>
+          <div class="tsc-content">
+            <div class="tsc-name" style="color:#E8C97A;">Kerala Heritage</div>
+            <div class="tsc-sub">Ocean &amp; Gold</div>
+          </div>
+          <div class="tsc-hover">Choose This →</div>
+        </div>
+        <div class="theme-showcase-card" style="background:#140310;" onclick="startBuilderWithTheme('bengali')">
+          <div class="tsc-pattern bengali-pattern"></div>
+          <div class="tsc-content">
+            <div class="tsc-name" style="color:#E85D8A;">Bengali Blossom</div>
+            <div class="tsc-sub">Rose &amp; Deep Plum</div>
+          </div>
+          <div class="tsc-hover">Choose This →</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="land-cta-section">
+    <div class="cta-mandala-wrap">
+      <svg class="cta-mandala" viewBox="0 0 300 300" fill="none">
+        <g stroke="#C9A84C" stroke-width="0.5" opacity="0.3">
+          <circle cx="150" cy="150" r="140"/><circle cx="150" cy="150" r="100"/><circle cx="150" cy="150" r="60"/>
+          <line x1="150" y1="10" x2="150" y2="290"/><line x1="10" y1="150" x2="290" y2="150"/>
+          <line x1="51" y1="51" x2="249" y2="249"/><line x1="249" y1="51" x2="51" y2="249"/>
+        </g>
+      </svg>
+    </div>
+    <div class="land-cta-content">
+      <p class="land-eyebrow" style="color:#C9A84C;">Begin Your Story</p>
+      <h2 class="land-cta-title">Ready to build your<br/><em>forever website?</em></h2>
+      <p class="land-cta-sub">Join thousands of couples who turned their wedding memories into a cinematic portal that lives forever online.</p>
+      <button class="land-primary-btn large" onclick="startBuilder()">Create Your Portal — Free</button>
+    </div>
+  </section>
+
+  <footer class="land-footer">
+    <div class="land-logo" style="justify-content:center;">
+      <div class="logo-gem">✦</div>
+      <span>WeddingCanvas</span>
+    </div>
+    <p class="land-footer-sub">Crafted with love for every Indian wedding</p>
+    <p class="land-footer-copy">© 2025 WeddingCanvas. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- BUILDER APP -->
+<div id="builderApp" style="display:none;">
+  <div class="builder-wrap">
+    <div class="builder-header">
+      <button class="back-btn" onclick="goHome()">← Back</button>
+      <div class="builder-logo">
+        <div class="logo-gem small">✦</div>
+        <span>WeddingCanvas Builder</span>
+      </div>
+      <div class="builder-steps">
+        <div class="bstep active" id="bstep1" onclick="goStep(1)"><span class="bstep-num">1</span> Theme</div>
+        <div class="bstep-line"></div>
+        <div class="bstep" id="bstep2" onclick="goStep(2)"><span class="bstep-num">2</span> Story</div>
+        <div class="bstep-line"></div>
+        <div class="bstep" id="bstep3" onclick="goStep(3)"><span class="bstep-num">3</span> Ceremonies</div>
+        <div class="bstep-line"></div>
+        <div class="bstep" id="bstep4" onclick="goStep(4)"><span class="bstep-num">4</span> Media</div>
+        <div class="bstep-line"></div>
+        <div class="bstep" id="bstep5" onclick="goStep(5)"><span class="bstep-num">5</span> Preview</div>
+      </div>
+      <button class="preview-btn" onclick="goStep(5)">Live Preview →</button>
+    </div>
+
+    <div class="builder-body">
+      <!-- STEP 1: THEME -->
+      <div class="builder-step" id="step1">
+        <div class="step-header">
+          <h2 class="step-title">Choose Your <em>Theme</em></h2>
+          <p class="step-desc">Select the visual world that best tells your story. Every element — colors, typography, patterns — transforms with your choice.</p>
+        </div>
+        <div class="theme-picker-grid">
+          <div class="theme-pick-card selected" data-theme="rajasthani" onclick="pickTheme(this)">
+            <div class="theme-pick-preview" style="background:#1a060a;">
+              <svg width="100%" height="80" viewBox="0 0 200 80" fill="none">
+                <g stroke="#C9A84C" stroke-width="0.7" opacity="0.6">
+                  <circle cx="100" cy="40" r="35"/><circle cx="100" cy="40" r="22"/><circle cx="100" cy="40" r="10"/>
+                  <line x1="65" y1="40" x2="135" y2="40"/><line x1="100" y1="5" x2="100" y2="75"/>
+                  <ellipse cx="100" cy="15" rx="7" ry="12" transform="rotate(0 100 40)"/>
+                  <ellipse cx="100" cy="15" rx="7" ry="12" transform="rotate(45 100 40)"/>
+                  <ellipse cx="100" cy="15" rx="7" ry="12" transform="rotate(90 100 40)"/>
+                  <ellipse cx="100" cy="15" rx="7" ry="12" transform="rotate(135 100 40)"/>
+                  <ellipse cx="100" cy="15" rx="7" ry="12" transform="rotate(180 100 40)"/>
+                  <ellipse cx="100" cy="15" rx="7" ry="12" transform="rotate(225 100 40)"/>
+                  <ellipse cx="100" cy="15" rx="7" ry="12" transform="rotate(270 100 40)"/>
+                  <ellipse cx="100" cy="15" rx="7" ry="12" transform="rotate(315 100 40)"/>
+                </g>
+                <text x="100" y="44" text-anchor="middle" fill="#FAF5E9" font-family="Cormorant Garamond" font-size="10" font-style="italic">A &amp; D</text>
+              </svg>
+            </div>
+            <div class="theme-pick-info">
+              <div class="theme-pick-name">Royal Rajasthani</div>
+              <div class="theme-pick-palette">
+                <span style="background:#4A0E1A;"></span>
+                <span style="background:#C9A84C;"></span>
+                <span style="background:#FAF5E9;"></span>
+                <span style="background:#F2D5C4;"></span>
+              </div>
+              <div class="theme-pick-desc">Regal burgundy, antique gold, mandala motifs. The grandeur of Rajputana.</div>
+            </div>
+            <div class="theme-pick-check">✓</div>
+          </div>
+
+          <div class="theme-pick-card" data-theme="mughal" onclick="pickTheme(this)">
+            <div class="theme-pick-preview" style="background:#091510;">
+              <svg width="100%" height="80" viewBox="0 0 200 80" fill="none">
+                <g stroke="#7EC8A0" stroke-width="0.7" opacity="0.6">
+                  <rect x="40" y="10" width="120" height="60" rx="4" fill="none"/>
+                  <path d="M40 28 Q100 8 160 28" fill="none"/>
+                  <ellipse cx="100" cy="40" rx="22" ry="26" fill="none"/>
+                </g>
+                <g stroke="#D4AF37" stroke-width="0.5">
+                  <line x1="78" y1="40" x2="122" y2="40"/><line x1="100" y1="18" x2="100" y2="62"/>
+                </g>
+                <text x="100" y="44" text-anchor="middle" fill="#F0F5EE" font-family="Cormorant Garamond" font-size="10" font-style="italic">A &amp; D</text>
+              </svg>
+            </div>
+            <div class="theme-pick-info">
+              <div class="theme-pick-name">Mughal Garden</div>
+              <div class="theme-pick-palette">
+                <span style="background:#0c1a12;"></span>
+                <span style="background:#7EC8A0;"></span>
+                <span style="background:#D4AF37;"></span>
+                <span style="background:#F0F5EE;"></span>
+              </div>
+              <div class="theme-pick-desc">Deep emerald, ivory arches, garden geometry. Timeless Mughal elegance.</div>
+            </div>
+            <div class="theme-pick-check">✓</div>
+          </div>
+
+          <div class="theme-pick-card" data-theme="marigold" onclick="pickTheme(this)">
+            <div class="theme-pick-preview" style="background:#120e00;">
+              <svg width="100%" height="80" viewBox="0 0 200 80" fill="none">
+                <g fill="#F4A61A">
+                  <circle cx="100" cy="40" r="10" opacity="0.9"/>
+                  <circle cx="100" cy="16" r="6" opacity="0.6"/>
+                  <circle cx="100" cy="64" r="6" opacity="0.6"/>
+                  <circle cx="76" cy="24" r="6" opacity="0.6"/>
+                  <circle cx="124" cy="24" r="6" opacity="0.6"/>
+                  <circle cx="76" cy="56" r="6" opacity="0.6"/>
+                  <circle cx="124" cy="56" r="6" opacity="0.6"/>
+                  <circle cx="60" cy="40" r="4" opacity="0.4"/>
+                  <circle cx="140" cy="40" r="4" opacity="0.4"/>
+                </g>
+                <text x="100" y="44" text-anchor="middle" fill="#FFF8E8" font-family="Cormorant Garamond" font-size="10" font-style="italic">A &amp; D</text>
+              </svg>
+            </div>
+            <div class="theme-pick-info">
+              <div class="theme-pick-name">Marigold Bloom</div>
+              <div class="theme-pick-palette">
+                <span style="background:#1a1200;"></span>
+                <span style="background:#F4A61A;"></span>
+                <span style="background:#E8612A;"></span>
+                <span style="background:#FFF8E8;"></span>
+              </div>
+              <div class="theme-pick-desc">Saffron blooms on midnight black. The warmth of marigold garlands.</div>
+            </div>
+            <div class="theme-pick-check">✓</div>
+          </div>
+
+          <div class="theme-pick-card" data-theme="modern" onclick="pickTheme(this)">
+            <div class="theme-pick-preview" style="background:#f5f0ea;">
+              <svg width="100%" height="80" viewBox="0 0 200 80" fill="none">
+                <g stroke="#1a1a1a" stroke-width="0.6" opacity="0.4">
+                  <line x1="60" y1="40" x2="140" y2="40"/>
+                  <line x1="100" y1="10" x2="100" y2="70"/>
+                  <circle cx="100" cy="40" r="28" fill="none"/>
+                  <circle cx="100" cy="40" r="8" fill="#1a1a1a" opacity="0.12"/>
+                </g>
+                <text x="100" y="44" text-anchor="middle" fill="#1a1a1a" font-family="Cormorant Garamond" font-size="10" font-style="italic">A &amp; D</text>
+              </svg>
+            </div>
+            <div class="theme-pick-info">
+              <div class="theme-pick-name">Modern Minimal</div>
+              <div class="theme-pick-palette">
+                <span style="background:#f5f0ea;"></span>
+                <span style="background:#1a1a1a;"></span>
+                <span style="background:#8a7560;"></span>
+                <span style="background:#e8e0d5;"></span>
+              </div>
+              <div class="theme-pick-desc">Warm cream, pure black lines. Sophisticated and timeless minimalism.</div>
+            </div>
+            <div class="theme-pick-check">✓</div>
+          </div>
+
+          <div class="theme-pick-card" data-theme="kerala" onclick="pickTheme(this)">
+            <div class="theme-pick-preview" style="background:#080f1a;">
+              <svg width="100%" height="80" viewBox="0 0 200 80" fill="none">
+                <path d="M40 70 Q80 20 100 16 Q120 20 160 70" stroke="#E8C97A" stroke-width="0.8" fill="none"/>
+                <line x1="100" y1="16" x2="100" y2="74" stroke="#E8C97A" stroke-width="0.5" stroke-dasharray="3,3"/>
+                <circle cx="52" cy="56" r="6" fill="#4FB3C8" opacity="0.6"/>
+                <circle cx="148" cy="56" r="6" fill="#4FB3C8" opacity="0.6"/>
+                <circle cx="100" cy="58" r="8" fill="#E8C97A" opacity="0.5"/>
+                <text x="100" y="44" text-anchor="middle" fill="#EEF4FF" font-family="Cormorant Garamond" font-size="10" font-style="italic">A &amp; D</text>
+              </svg>
+            </div>
+            <div class="theme-pick-info">
+              <div class="theme-pick-name">Kerala Heritage</div>
+              <div class="theme-pick-palette">
+                <span style="background:#080f1a;"></span>
+                <span style="background:#E8C97A;"></span>
+                <span style="background:#4FB3C8;"></span>
+                <span style="background:#EEF4FF;"></span>
+              </div>
+              <div class="theme-pick-desc">Deep ocean night, golden arches, temple lamp geometry. God's Own Country.</div>
+            </div>
+            <div class="theme-pick-check">✓</div>
+          </div>
+
+          <div class="theme-pick-card" data-theme="bengali" onclick="pickTheme(this)">
+            <div class="theme-pick-preview" style="background:#140310;">
+              <svg width="100%" height="80" viewBox="0 0 200 80" fill="none">
+                <path d="M100 6 L112 34 L142 34 L118 52 L128 80 L100 62 L72 80 L82 52 L58 34 L88 34 Z" stroke="#E85D8A" stroke-width="0.7" fill="none" opacity="0.7"/>
+                <circle cx="100" cy="40" r="8" fill="#E85D8A" opacity="0.3"/>
+                <text x="100" y="44" text-anchor="middle" fill="#FFF0F8" font-family="Cormorant Garamond" font-size="10" font-style="italic">A &amp; D</text>
+              </svg>
+            </div>
+            <div class="theme-pick-info">
+              <div class="theme-pick-name">Bengali Blossom</div>
+              <div class="theme-pick-palette">
+                <span style="background:#140310;"></span>
+                <span style="background:#E85D8A;"></span>
+                <span style="background:#9B2D60;"></span>
+                <span style="background:#FFF0F8;"></span>
+              </div>
+              <div class="theme-pick-desc">Deep plum, rose star motifs. The beauty of Durga Puja and Shubho Bibaho.</div>
+            </div>
+            <div class="theme-pick-check">✓</div>
+          </div>
+        </div>
+        <div class="step-nav">
+          <div></div>
+          <button class="step-next-btn" onclick="goStep(2)">Next: Add Your Story →</button>
+        </div>
+      </div>
+
+      <!-- STEP 2: STORY -->
+      <div class="builder-step" id="step2" style="display:none;">
+        <div class="step-header">
+          <h2 class="step-title">Your <em>Love Story</em></h2>
+          <p class="step-desc">Every detail you add becomes part of your cinematic portal. Fill in as much as you like — you can always edit later.</p>
+        </div>
+        <div class="form-grid">
+          <div class="form-col">
+            <h3 class="form-section-title">The Couple</h3>
+            <div class="field-row two-col">
+              <div class="field-group">
+                <label>Bride's Full Name</label>
+                <input type="text" id="brideName" placeholder="e.g. Arya Sharma" oninput="syncPreview()"/>
+              </div>
+              <div class="field-group">
+                <label>Groom's Full Name</label>
+                <input type="text" id="groomName" placeholder="e.g. Dev Malhotra" oninput="syncPreview()"/>
+              </div>
+            </div>
+            <div class="field-row two-col">
+              <div class="field-group">
+                <label>Wedding Date</label>
+                <input type="text" id="weddingDate" placeholder="e.g. 21 February 2025" oninput="syncPreview()"/>
+              </div>
+              <div class="field-group">
+                <label>Venue City</label>
+                <input type="text" id="venueCity" placeholder="e.g. Jaipur, Rajasthan" oninput="syncPreview()"/>
+              </div>
+            </div>
+            <div class="field-group">
+              <label>Venue Name</label>
+              <input type="text" id="venueName" placeholder="e.g. Rambagh Palace" oninput="syncPreview()"/>
+            </div>
+
+            <h3 class="form-section-title" style="margin-top:2rem;">Your Story</h3>
+            <div class="field-group">
+              <label>How did you meet?</label>
+              <textarea id="howMet" placeholder="Tell the story of your first meeting..."></textarea>
+            </div>
+            <div class="field-group">
+              <label>The Proposal</label>
+              <textarea id="proposal" placeholder="Where were you? What happened? How did they say yes?"></textarea>
+            </div>
+            <div class="field-group">
+              <label>A message to each other (optional)</label>
+              <textarea id="loveNote" placeholder="A short note from the couple to their guests..."></textarea>
+            </div>
+          </div>
+
+          <div class="form-col">
+            <h3 class="form-section-title">Story Timeline</h3>
+            <p class="form-hint">Add up to 4 milestones in your relationship.</p>
+            <div id="timelineItems">
+              <div class="timeline-item-form" data-idx="0">
+                <div class="tif-header">
+                  <span class="tif-num">01</span>
+                  <span class="tif-label">First Milestone</span>
+                </div>
+                <div class="field-row two-col">
+                  <div class="field-group"><label>Date / Year</label><input type="text" class="tif-date" placeholder="e.g. June 2020"/></div>
+                  <div class="field-group"><label>Title</label><input type="text" class="tif-title" placeholder="e.g. The First Meeting"/></div>
+                </div>
+                <div class="field-group"><label>Description</label><textarea class="tif-desc" placeholder="What happened..."></textarea></div>
+              </div>
+              <div class="timeline-item-form" data-idx="1">
+                <div class="tif-header">
+                  <span class="tif-num">02</span>
+                  <span class="tif-label">Second Milestone</span>
+                </div>
+                <div class="field-row two-col">
+                  <div class="field-group"><label>Date / Year</label><input type="text" class="tif-date" placeholder="e.g. Diwali 2021"/></div>
+                  <div class="field-group"><label>Title</label><input type="text" class="tif-title" placeholder="e.g. First Diwali Together"/></div>
+                </div>
+                <div class="field-group"><label>Description</label><textarea class="tif-desc" placeholder="What happened..."></textarea></div>
+              </div>
+              <div class="timeline-item-form" data-idx="2">
+                <div class="tif-header">
+                  <span class="tif-num">03</span>
+                  <span class="tif-label">Third Milestone</span>
+                </div>
+                <div class="field-row two-col">
+                  <div class="field-group"><label>Date / Year</label><input type="text" class="tif-date" placeholder=""/></div>
+                  <div class="field-group"><label>Title</label><input type="text" class="tif-title" placeholder=""/></div>
+                </div>
+                <div class="field-group"><label>Description</label><textarea class="tif-desc" placeholder=""></textarea></div>
+              </div>
+              <div class="timeline-item-form" data-idx="3">
+                <div class="tif-header">
+                  <span class="tif-num">04</span>
+                  <span class="tif-label">The Wedding</span>
+                </div>
+                <div class="field-row two-col">
+                  <div class="field-group"><label>Date / Year</label><input type="text" class="tif-date" placeholder=""/></div>
+                  <div class="field-group"><label>Title</label><input type="text" class="tif-title" placeholder="e.g. We Became One"/></div>
+                </div>
+                <div class="field-group"><label>Description</label><textarea class="tif-desc" placeholder=""></textarea></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="step-nav">
+          <button class="step-back-btn" onclick="goStep(1)">← Back</button>
+          <button class="step-next-btn" onclick="goStep(3)">Next: Ceremonies →</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: CEREMONIES -->
+      <div class="builder-step" id="step3" style="display:none;">
+        <div class="step-header">
+          <h2 class="step-title">Your <em>Ceremonies</em></h2>
+          <p class="step-desc">Toggle the ceremonies you're celebrating and add details for each. Each one gets its own dedicated section in your portal.</p>
+        </div>
+        <div class="ceremonies-builder">
+          <div class="cer-list" id="cerList">
+            <!-- Filled by JS -->
+          </div>
+          <div class="cer-editor" id="cerEditor">
+            <div class="cer-editor-empty">
+              <div class="cer-editor-icon">✦</div>
+              <p>Click a ceremony to edit its details</p>
+            </div>
+          </div>
+        </div>
+        <div class="step-nav">
+          <button class="step-back-btn" onclick="goStep(2)">← Back</button>
+          <button class="step-next-btn" onclick="goStep(4)">Next: Media →</button>
+        </div>
+      </div>
+
+      <!-- STEP 4: MEDIA -->
+      <div class="builder-step" id="step4" style="display:none;">
+        <div class="step-header">
+          <h2 class="step-title">Photos &amp; <em>Film</em></h2>
+          <p class="step-desc">Add your wedding short film and upload your most treasured photos. These bring the cinematic magic to life.</p>
+        </div>
+        <div class="media-builder">
+          <div class="media-section">
+            <h3 class="form-section-title">Wedding Short Film</h3>
+            <p class="form-hint">Paste a YouTube or Vimeo link. It will display in our signature cinematic film-reel frame.</p>
+            <div class="field-group">
+              <label>Film URL</label>
+              <input type="text" id="filmUrl" placeholder="https://youtube.com/watch?v=..." oninput="syncPreview()"/>
+            </div>
+            <div class="field-group">
+              <label>Film Title</label>
+              <input type="text" id="filmTitle" placeholder="e.g. Arya & Dev — A Wedding Film" oninput="syncPreview()"/>
+            </div>
+            <div class="field-group">
+              <label>Film Duration</label>
+              <input type="text" id="filmDuration" placeholder="e.g. 5 mins 30 secs" oninput="syncPreview()"/>
+            </div>
+            <div class="film-preview-box" id="filmPreviewBox">
+              <div class="fpb-icon">▶</div>
+              <div class="fpb-text">Your film will appear here</div>
+            </div>
+          </div>
+
+          <div class="media-section">
+            <h3 class="form-section-title">Photo Gallery</h3>
+            <p class="form-hint">Upload your wedding photos. Drag to reorder. The gallery uses a cinematic mosaic layout.</p>
+            <div class="photo-upload-grid" id="photoGrid">
+              <div class="photo-slot" onclick="triggerUpload(0)"><span class="photo-slot-icon">+</span><span class="photo-slot-label">Hero Portrait</span></div>
+              <div class="photo-slot" onclick="triggerUpload(1)"><span class="photo-slot-icon">+</span><span class="photo-slot-label">Ceremony</span></div>
+              <div class="photo-slot" onclick="triggerUpload(2)"><span class="photo-slot-icon">+</span><span class="photo-slot-label">The Kiss / Pheras</span></div>
+              <div class="photo-slot" onclick="triggerUpload(3)"><span class="photo-slot-icon">+</span><span class="photo-slot-label">Family Portrait</span></div>
+              <div class="photo-slot" onclick="triggerUpload(4)"><span class="photo-slot-icon">+</span><span class="photo-slot-label">Bridal Detail</span></div>
+              <div class="photo-slot" onclick="triggerUpload(5)"><span class="photo-slot-icon">+</span><span class="photo-slot-label">Reception / Dance</span></div>
+              <div class="photo-slot" onclick="triggerUpload(6)"><span class="photo-slot-icon">+</span><span class="photo-slot-label">Couple Portrait</span></div>
+              <div class="photo-slot" onclick="triggerUpload(7)"><span class="photo-slot-icon">+</span><span class="photo-slot-label">Candid Moment</span></div>
+            </div>
+            <input type="file" id="photoInput" accept="image/*" style="display:none;" onchange="handlePhotoUpload(event)"/>
+          </div>
+
+          <div class="media-section">
+            <h3 class="form-section-title">Blessings from Guests</h3>
+            <p class="form-hint">Pre-add blessings from family members, or leave this for guests to fill in on your live portal.</p>
+            <div id="blessingsList">
+              <div class="blessing-form-item" data-idx="0">
+                <div class="field-row two-col">
+                  <div class="field-group"><label>From</label><input type="text" class="bl-from" placeholder="e.g. Dev's parents"/></div>
+                  <div class="field-group"><label>Relationship</label><input type="text" class="bl-rel" placeholder="e.g. Parents"/></div>
+                </div>
+                <div class="field-group"><label>Blessing / Message</label><textarea class="bl-text" placeholder="Their heartfelt message..."></textarea></div>
+              </div>
+              <div class="blessing-form-item" data-idx="1">
+                <div class="field-row two-col">
+                  <div class="field-group"><label>From</label><input type="text" class="bl-from" placeholder="e.g. Best friend"/></div>
+                  <div class="field-group"><label>Relationship</label><input type="text" class="bl-rel" placeholder="e.g. Best Friend"/></div>
+                </div>
+                <div class="field-group"><label>Blessing / Message</label><textarea class="bl-text" placeholder="Their heartfelt message..."></textarea></div>
+              </div>
+            </div>
+            <button class="add-blessing-btn" onclick="addBlessing()">+ Add Another Blessing</button>
+          </div>
+        </div>
+        <div class="step-nav">
+          <button class="step-back-btn" onclick="goStep(3)">← Back</button>
+          <button class="step-next-btn" onclick="goStep(5)">Preview Your Portal →</button>
+        </div>
+      </div>
+
+      <!-- STEP 5: PREVIEW & GENERATE -->
+      <div class="builder-step" id="step5" style="display:none;">
+        <div class="step-header">
+          <h2 class="step-title">Your Portal is <em>Ready</em></h2>
+          <p class="step-desc">Your cinematic wedding portal is generated and ready. Preview it, then download or share it.</p>
+        </div>
+        <div class="preview-actions-bar">
+          <div class="preview-url-display">
+            <span class="pud-label">Your portal URL:</span>
+            <span class="pud-url" id="pudUrl">arya-dev.weddingcanvas.in</span>
+            <button class="pud-copy" onclick="copyUrl()">Copy</button>
+          </div>
+          <div class="preview-action-btns">
+            <button class="dl-btn" onclick="generateAndDownload()">⬇ Download Portal HTML</button>
+            <button class="share-btn" onclick="sharePortal()">Share Link ↗</button>
+          </div>
+        </div>
+        <div class="final-preview-frame">
+          <div class="fpf-browser">
+            <div class="fpf-bar">
+              <div class="fpf-dots"><span></span><span></span><span></span></div>
+              <div class="fpf-url" id="fpfUrl">arya-dev.weddingcanvas.in</div>
+            </div>
+            <iframe id="portalIframe" src="about:blank" style="width:100%;height:680px;border:none;"></iframe>
+          </div>
+        </div>
+        <div class="step-nav">
+          <button class="step-back-btn" onclick="goStep(4)">← Back</button>
+          <button class="step-next-btn green" onclick="generateAndDownload()">⬇ Download Your Portal</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/themes.js"></script>
+<script src="js/builder.js"></script>
+<script src="js/generator.js"></script>
+</body>
+</html>
