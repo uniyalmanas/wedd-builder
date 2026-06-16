@@ -11,6 +11,7 @@ Experience the production deployments hosted live:
 * 🌐 **Bespoke Portfolio (Manas Uniyal):** [https://manas-portfolio-seven.vercel.app](https://manas-portfolio-seven.vercel.app)
 * 🌸 **Atelier 01 (Vows & Vistas Client Sandbox):** [https://manas-portfolio-seven.vercel.app/wedding-planner](https://manas-portfolio-seven.vercel.app/wedding-planner)
 * 🎨 **Atelier 02 (WeddingCanvas HTML Builder):** [https://manas-portfolio-seven.vercel.app/weddingcanvas/index.html](https://manas-portfolio-seven.vercel.app/weddingcanvas/index.html)
+* 🏋️ **Atelier 03 (Apex Gym Hub & SaaS CRM):** [https://manas-portfolio-seven.vercel.app/gym-app/](https://manas-portfolio-seven.vercel.app/gym-app/)
 
 ---
 
@@ -20,10 +21,12 @@ This repository acts as a monorepo workspace holding the following structures:
 
 ```bash
 wedd-builder/
+├── gym-app/               # Dedicated Vite/React client for Apex Gym Hub
 ├── manas-portfolio/       # Main Next.js portfolio website (bilingual, luxury theme)
-│   ├── src/app/           # Next.js app pages (landing page and wedding-planner layout)
+│   ├── src/app/           # Next.js app pages and Gym Hub API endpoints
 │   └── public/            # Static files, assets, and compiled builders
-│       └── weddingcanvas/ # Embedded compiler for unified routing
+│       ├── weddingcanvas/ # Embedded compiler for unified routing
+│       └── gym-app/       # Compiled gym-app client folder served by Next.js
 ├── wedding-portfolio/     # Dedicated Next.js frontend for "Vows & Vistas"
 └── weddingcanvas/         # Standalone HTML/JS compiler wizard for wedding schedules
 ```
@@ -31,6 +34,13 @@ wedd-builder/
 ---
 
 ## 🛠️ Technical Specifications
+
+### 0. Apex Gym Hub (`gym-app` & backend APIs)
+* **Client Tech:** Vite, React 19, TypeScript, Vanilla CSS design tokens.
+* **Security:** Native JWT Authentication with `Bearer` header token injection via `authFetch`.
+* **Payments:** Fully integrated Stripe Checkout sessions for class & trainer bookings.
+* **CRM Console:** Operator dashboard displaying real-time metrics, automated email dispatcher (welcome, receipt invoice, inquiry thank-you), and graphical member manager (inline role/tier updates, user registration, database deletion with cascade cleanup).
+* **Database fallback:** PostgreSQL (Supabase) in production, local file backup locally.
 
 ### 1. Digital Flagship Portfolio (`manas-portfolio`)
 * **Framework:** Next.js 16.2.9 (Turbopack) & React 19
