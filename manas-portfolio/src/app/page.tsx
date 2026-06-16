@@ -65,6 +65,11 @@ const translations = {
     creativePhase: "Creative Phase",
     typographySystemLocked: "Typography System Locked",
     
+    atelier05Label: "[ ATELIER 05 / MEMBER & TRAINER PORTAL ]",
+    work5Title: "Apex Gym Hub",
+    work5Desc: "A high-performance full stack gym management workspace. Integrates real-time class booking simulators, personal trainer matches, a workout builder, a local calorie/BMI calculator, and a secure operational dashboard.",
+    openGymApp: "Open Gym Workspace →",
+    
     craftLabel: "03 / The Craft",
     craftHeading: "Operational Systems, Artfully Wrapped.",
     craft1Title: "Invisible Leads CRM",
@@ -162,6 +167,11 @@ const translations = {
     work4Desc: "high-fashion brands के लिए एक immersive showcase। Aesthetic brand stories को capture करने के लिए liquid displacement WebGL shaders, camera scroll link triggers, और high-contrast typographic layouts के साथ design किया गया।",
     creativePhase: "Creative Phase",
     typographySystemLocked: "Typography System Locked",
+    
+    atelier05Label: "[ ATELIER 05 / MEMBER & TRAINER PORTAL ]",
+    work5Title: "Apex Gym Hub",
+    work5Desc: "एक high-performance full stack gym management workspace। इसमें real-time class booking simulators, personal trainer matches, workout builder, dynamic calorie/BMI calculator और secure operational dashboard integrated हैं।",
+    openGymApp: "Open Gym Workspace →",
     
     craftLabel: "03 / The Craft",
     craftHeading: "Operational Systems, Artfully Wrapped.",
@@ -638,6 +648,53 @@ export default function Home() {
                   <span className={`inline-block text-[10px] md:text-xs tracking-[0.18em] font-mono uppercase transition-all duration-700 border ${theme === 'dark' ? 'text-zinc-550 border-white/5 bg-black/20' : 'text-zinc-400 border-black/5 bg-white/20'} px-3 py-1.5 rounded-sm`}>
                     {t.typographySystemLocked}
                   </span>
+                </div>
+              </div>
+            </div>
+
+            {/* WORK 05: Apex Gym Hub (Full Width Spread) */}
+            <div className="lg:col-span-12 lg:mt-32 space-y-8 group">
+              <div className={`aspect-[21/9] w-full rounded-sm bg-cover bg-center border transition-all duration-700 ${currentStyles.borderThin} relative overflow-hidden shadow-2xl`}>
+                <div 
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-[1200ms] ease-out scale-100 group-hover:scale-105"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=1600&q=80')" }}
+                />
+                <div className={`absolute inset-0 transition-colors duration-700 ${theme === 'dark' ? 'bg-[#060608]/60 group-hover:bg-[#060608]/25' : 'bg-[#fbfaf7]/50 group-hover:bg-[#fbfaf7]/15'} flex items-end p-6 md:p-12`}>
+                  <div className="space-y-2">
+                    <span className="text-[10px] md:text-xs tracking-[0.25em] font-mono uppercase text-[#c8891e] bg-black/60 px-4 py-2 backdrop-blur-sm rounded-sm">
+                      Full Stack Operations Dashboard
+                    </span>
+                  </div>
+                </div>
+                <div className={`absolute top-6 right-6 ${theme === 'dark' ? 'text-white/10' : 'text-black/5'} text-6xl font-serif select-none`}>05</div>
+              </div>
+
+              <div className="grid md:grid-cols-12 gap-8 items-start">
+                <div className="md:col-span-8 space-y-4">
+                  <span className={`text-xs md:text-sm font-mono tracking-[0.2em] uppercase block transition-colors duration-700 ${currentStyles.goldText}`}>
+                    {t.atelier05Label}
+                  </span>
+                  <h3 className={`font-serif text-3xl font-light tracking-tight transition-colors duration-700 ${currentStyles.whiteText}`}>
+                    {t.work5Title}
+                  </h3>
+                  <p className={`transition-colors duration-700 ${currentStyles.textSecondary} text-xs md:text-sm font-light leading-relaxed tracking-wide max-w-2xl`}>
+                    {t.work5Desc}
+                  </p>
+                </div>
+                
+                <div className="md:col-span-4 flex md:justify-end gap-6 pt-4 md:pt-10">
+                  <Link
+                    href="/gym-app/index.html"
+                    className={`text-xs md:text-sm tracking-[0.25em] uppercase font-bold border-b transition-all duration-300 ${theme === 'dark' ? 'text-white border-white hover:border-[#c8891e] hover:text-[#c8891e]' : 'text-black border-black hover:border-[#b07b22] hover:text-[#b07b22]'} pb-1`}
+                  >
+                    {t.openGymApp}
+                  </Link>
+                  <a
+                    href="file:///D:/Wedding%20business/gym-app/src/App.tsx"
+                    className={`transition-colors duration-300 text-[10px] md:text-xs tracking-[0.2em] uppercase font-mono ${currentStyles.textTertiary} ${theme === 'dark' ? 'hover:text-white' : 'hover:text-black'}`}
+                  >
+                    {t.inspectCode}
+                  </a>
                 </div>
               </div>
             </div>
